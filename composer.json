@@ -1,6 +1,6 @@
 {
-    "name": "rasulian/laravel-user-activation",
-    "description": "A package for user email verification with activation code",
+    "name": "rasulian/laravel-user-verification",
+    "description": "A package for user email and phone number verification with activation code",
     "keywords": [
         "laravel",
         "user verification",
