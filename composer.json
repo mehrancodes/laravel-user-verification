@@ -1,0 +1,24 @@
+{
+    "name": "rasulian/laravel-user-activation",
+    "description": "A package for user email verification with activation code",
+    "keywords": [
+        "laravel",
+        "user verification",
+        "token",
+        "code"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mehran Rasulian",
+            "email": "mehran.rasulian@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Rasulian\\UserVerification\\": "src/"
+        }
+    },
+    "prefer-stable": true
+}
