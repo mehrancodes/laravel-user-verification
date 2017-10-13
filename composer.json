@@ -19,5 +19,6 @@
         "psr-4": {
             "Rasulian\\UserVerification\\": "src/"
         }
-    }
+    },
+    "prefer-stable": true
 }
