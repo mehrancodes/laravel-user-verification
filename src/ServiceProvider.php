@@ -16,14 +16,14 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../config/verification.php' => $this->app->configPath().'/verification.php',
-        ], 'config');
+        ], 'verification-config');
 
         if (! class_exists('CreateVerificationTables')) {
             $timestamp = date('Y_m_d_His', time());
             $this->publishes([
                 __DIR__ . '/../database/migrations/create_user_verifications_table.php.stub'
                 => $this->app->databasePath()."/migrations/{$timestamp}_create_user_verifications_table.php",
-            ], 'migrations');
+            ], 'verification-migrations');
         }
 
         // Add the Activation facade
