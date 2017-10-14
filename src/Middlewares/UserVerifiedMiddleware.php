@@ -16,7 +16,7 @@ class UserVerifiedMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (auth()->check() && !auth()->user()->verfied)
+        if (auth()->check() && !auth()->user()->verified)
             throw new UserNotVerifiedException;
 
         return $next($request);
